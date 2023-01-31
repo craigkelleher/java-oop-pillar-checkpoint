@@ -13,6 +13,22 @@ public class Rental {
         this.endDate = endDate;
     }
 
+    public BigDecimal getRentalPricePerDay() {
+        return rentalPricePerDay;
+    }
+
+    public void setRentalPricePerDay(BigDecimal rentalPricePerDay) {
+        this.rentalPricePerDay = rentalPricePerDay;
+    }
+
+    public LocalDateTime getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(LocalDateTime endDate) {
+        this.endDate = endDate;
+    }
+
     @Override
     public String toString() {
         return "Rental{" +
