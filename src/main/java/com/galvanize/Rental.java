@@ -17,16 +17,8 @@ public class Rental {
         return rentalPricePerDay;
     }
 
-    public void setRentalPricePerDay(BigDecimal rentalPricePerDay) {
-        this.rentalPricePerDay = rentalPricePerDay;
-    }
-
     public LocalDateTime getEndDate() {
         return endDate;
-    }
-
-    public void setEndDate(LocalDateTime endDate) {
-        this.endDate = endDate;
     }
 
     @Override
