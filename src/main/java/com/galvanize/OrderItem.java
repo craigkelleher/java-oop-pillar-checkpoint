@@ -3,19 +3,19 @@ package com.galvanize;
 import java.math.BigDecimal;
 
 public class OrderItem {
-    private BigDecimal pricePerMonth;
-    private int numberOfMonths;
+    private BigDecimal price;
+    private int duration;
 
-    public OrderItem(BigDecimal pricePerMonth, int numberOfMonths) {
-        this.pricePerMonth = pricePerMonth;
-        this.numberOfMonths = numberOfMonths;
+    public OrderItem(BigDecimal price, int duration) {
+        this.price = price;
+        this.duration = duration;
     }
 
-    public BigDecimal getPricePerMonth() {
-        return pricePerMonth;
+    public BigDecimal getPrice() {
+        return price;
     }
 
-    public int getNumberOfMonths() {
-        return numberOfMonths;
+    public int getDuration() {
+        return duration;
     }
 }
