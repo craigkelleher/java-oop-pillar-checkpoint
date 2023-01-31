@@ -17,7 +17,7 @@ public class Order {
             total = total.add(lease.pricePerMonth.multiply(BigDecimal.valueOf(lease.numberOfMonths)));
         }
         else if (item instanceof Purchase) {
-            total = total.add(((Purchase) item).price);
+            total = total.add(((Purchase) item).getPrice());
         }
         else if (item instanceof Rental) {
             Rental rental = (Rental) item;
