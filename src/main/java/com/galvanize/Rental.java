@@ -5,8 +5,8 @@ import java.time.LocalDateTime;
 
 public class Rental {
 
-    public BigDecimal rentalPricePerDay;
-    public LocalDateTime endDate;
+    private BigDecimal rentalPricePerDay;
+    private LocalDateTime endDate;
 
     public Rental(BigDecimal rentalPricePerDay, LocalDateTime endDate) {
         this.rentalPricePerDay = rentalPricePerDay;
