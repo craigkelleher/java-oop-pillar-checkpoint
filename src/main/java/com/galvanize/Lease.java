@@ -2,24 +2,13 @@ package com.galvanize;
 
 import java.math.BigDecimal;
 
-public class Lease {
+public class Lease extends OrderItem{
 
-    private BigDecimal pricePerMonth;
-    private int numberOfMonths;
     private String licensePlate;
 
     public Lease(String licensePlate, BigDecimal pricePerMonth, int numberOfMonths) {
+        super(pricePerMonth, numberOfMonths);
         this.licensePlate = licensePlate;
-        this.pricePerMonth = pricePerMonth;
-        this.numberOfMonths = numberOfMonths;
-    }
-
-    public BigDecimal getPricePerMonth() {
-        return pricePerMonth;
-    }
-
-    public int getNumberOfMonths() {
-        return numberOfMonths;
     }
 
     public String getLicensePlate() {
@@ -29,8 +18,8 @@ public class Lease {
     @Override
     public String toString() {
         return "Lease{" +
-                "pricePerMonth=" + pricePerMonth +
-                ", numberOfMonths=" + numberOfMonths +
+                "pricePerMonth=" + getPricePerMonth() +
+                ", numberOfMonths=" + getNumberOfMonths() +
                 ", licensePlate='" + licensePlate + '\'' +
                 '}';
     }
