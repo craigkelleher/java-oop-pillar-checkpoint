@@ -7,8 +7,8 @@ import java.util.ArrayList;
 
 public class Order {
 
-    public ArrayList<Object> items = new ArrayList<>();
-    public BigDecimal total = new BigDecimal("0.00");
+    private ArrayList<Object> items = new ArrayList<>();
+    private BigDecimal total = new BigDecimal("0.00");
 
     void addItem(Object item) {
         items.add(item);
