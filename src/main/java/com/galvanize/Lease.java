@@ -18,9 +18,9 @@ public class Lease extends OrderItem{
     @Override
     public String toString() {
         return "Lease{" +
-                "pricePerMonth=" + getPricePerMonth() +
-                ", numberOfMonths=" + getNumberOfMonths() +
-                ", licensePlate='" + licensePlate + '\'' +
+                "pricePerMonth=" + getPrice() +
+                ", numberOfMonths=" + getDuration() +
+                ", licensePlate='" + getLicensePlate() + '\'' +
                 '}';
     }
 }
