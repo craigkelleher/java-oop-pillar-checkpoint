@@ -4,9 +4,9 @@ import java.math.BigDecimal;
 
 public class Lease {
 
-    public BigDecimal pricePerMonth;
-    public int numberOfMonths;
-    public String licensePlate;
+    private BigDecimal pricePerMonth;
+    private int numberOfMonths;
+    private String licensePlate;
 
     public Lease(String licensePlate, BigDecimal pricePerMonth, int numberOfMonths) {
         this.licensePlate = licensePlate;
