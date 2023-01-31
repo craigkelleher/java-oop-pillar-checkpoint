@@ -14,6 +14,30 @@ public class Lease {
         this.numberOfMonths = numberOfMonths;
     }
 
+    public BigDecimal getPricePerMonth() {
+        return pricePerMonth;
+    }
+
+    public void setPricePerMonth(BigDecimal pricePerMonth) {
+        this.pricePerMonth = pricePerMonth;
+    }
+
+    public int getNumberOfMonths() {
+        return numberOfMonths;
+    }
+
+    public void setNumberOfMonths(int numberOfMonths) {
+        this.numberOfMonths = numberOfMonths;
+    }
+
+    public String getLicensePlate() {
+        return licensePlate;
+    }
+
+    public void setLicensePlate(String licensePlate) {
+        this.licensePlate = licensePlate;
+    }
+
     @Override
     public String toString() {
         return "Lease{" +
