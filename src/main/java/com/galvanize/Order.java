@@ -29,4 +29,8 @@ public class Order {
     public BigDecimal getTotal() {
         return total;
     }
+
+    public ArrayList<Object> getItems() {
+        return new ArrayList<>(items);
+    }
 }
