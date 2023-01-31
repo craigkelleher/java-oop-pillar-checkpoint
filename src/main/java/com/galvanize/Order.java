@@ -21,8 +21,8 @@ public class Order {
         }
         else if (item instanceof Rental) {
             Rental rental = (Rental) item;
-            long days = LocalDateTime.now().until(rental.endDate, ChronoUnit.DAYS) + 1;
-            total = total.add(rental.rentalPricePerDay.multiply(BigDecimal.valueOf(days)));
+            long days = LocalDateTime.now().until(rental.getEndDate(), ChronoUnit.DAYS) + 1;
+            total = total.add(rental.getRentalPricePerDay().multiply(BigDecimal.valueOf(days)));
         }
     }
 
