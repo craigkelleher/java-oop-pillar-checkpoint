@@ -16,6 +16,11 @@ public class Lease extends OrderItem{
     }
 
     @Override
+    public BigDecimal totalPrice() {
+        return getPrice().multiply(BigDecimal.valueOf(getDuration()));
+    }
+
+    @Override
     public String toString() {
         return "Lease{" +
                 "pricePerMonth=" + getPrice() +
