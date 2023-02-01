@@ -2,18 +2,12 @@ package com.galvanize;
 
 import java.math.BigDecimal;
 
-public class Purchase {
-
-    private BigDecimal price;
+public class Purchase extends OrderItem{
     private String productName;
 
     public Purchase(String productName, BigDecimal price) {
+        super(price);
         this.productName = productName;
-        this.price = price;
-    }
-
-    public BigDecimal getPrice() {
-        return price;
     }
 
     public String getProductName() {
@@ -21,9 +15,14 @@ public class Purchase {
     }
 
     @Override
+    public BigDecimal totalPrice() {
+        return getPrice();
+    }
+
+    @Override
     public String toString() {
         return "Purchase{" +
-                "price=" + price +
+                "price=" + getPrice() +
                 ", productName='" + productName + '\'' +
                 '}';
     }
